@@ -56,22 +56,31 @@ li a {
 li a:hover {
    background-color: #111;
  }
-
- /* collumns on the sides of the page */
- .column {
+ .text {
+   background-color: black;
+   color: grey;
+ }
+ /* Create three unequal columns that floats next to each other */
+.column {
    float: left;
+   padding: 10px;
  }
  
  /* Left and right column */
  .column.side {
-   width:15%;
-   background-image: linear-gradient(to top, black, blue);
-max-width: 15%;
+   width: 25%;
  }
  
  /* Middle column */
  .column.middle {
-   width: 70%;
+   width: 50%;
+ }
+ 
+ /* Clear floats after the columns */
+ .row::after {
+   content: "";
+   display: table;
+   clear: both;
  }
  
  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
