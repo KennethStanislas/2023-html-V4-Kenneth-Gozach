@@ -17,3 +17,18 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+body {
+     background-image: linear-gradient(to right, red , yellow);
+}
+title {
+   background-image: linear-gradient(to left, black , gray);
+   color: blue;
+}
+nav {
+   background-color: blue;
+   color:grey
+}
+footer {
+   background-color: grey;
+   color: black;
+}
