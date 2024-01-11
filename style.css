@@ -18,10 +18,22 @@
 
 /* add your css here, feel free to use comments and order them logically for better readability */
 .header {
-   background-color: #F1F1F1;
+   background-image: linear-gradient(to right, black , yellow);
    text-align: center;
    padding: 20px;
  }
+
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , yellow);
+}
+.header {
+  background-image: linear-gradient(to right, black , blue);
+  padding: 20px;
+  text-align: center;
+}
+
 body {
      background-image: linear-gradient(to right, red , yellow);
 }
