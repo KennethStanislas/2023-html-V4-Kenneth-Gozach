@@ -17,6 +17,11 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+.header {
+   background-color: #F1F1F1;
+   text-align: center;
+   padding: 20px;
+ }
 body {
      background-image: linear-gradient(to right, red , yellow);
 }
