@@ -63,30 +63,24 @@ li a:hover {
  .CurrentPage {
    background-color: rgb(8, 8, 189)
  }
- /* Create three unequal columns that floats next to each other */
 .column {
    float: left;
-   padding: 10px;
+   padding: 4px;
  }
  
- /* Left and right column */
  .column.side {
-   width: 25%;
- }
- 
- /* Middle column */
- .column.middle {
    width: 50%;
  }
  
- /* Clear floats after the columns */
+ .column.middle {
+   width: 80%;
+ }
  .row::after {
    content: "";
    display: table;
    clear: both;
  }
  
- /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 600px) {
    .column.side, .column.middle {
      width: 100%;
@@ -105,20 +99,38 @@ li a:hover {
    background-image: linear-gradient(to bottom, navy, rgb(1, 1, 96), black);
  }
 
+ /*Dropdown box voor content, gebruik in bijv. foto's etc */
+ /*.dropbox {
+   background-color: rgb(37, 37, 116);
+   color:azure;
+   padding:12px;
+   font-size: 12px;
+   border:none;
+   cursor:pointer;
+ }*/
+ /*locatie box*/
+ .dropboxLoc {
+   position: relative;
+   display: inline-block;
+ }
 
-/*
-body {
-     background-image: linear-gradient(to right, red , yellow);
-}
-title {
-   background-image: linear-gradient(to left, black , gray);
-   color: blue;
-}
-nav {
+ /*content van box*/
+ .dropbox-Content {
+   display: none;
+   position: absolute;
+   background-color: navy;
+   min-width: 160px;
+   z-index: 1;
+ }
+/* .dropbox-Content a {
+   color:azure;
+   padding: 8px 12px;
+   text-decoration: none;
+   display:block;
+ }*/
+/* .dropbox-Content a:hover{
    background-color: blue;
-   color:grey
-}
-footer {
-   background-color: grey;
-   color: black;
-}*/
+ }*/
+ .dropboxLoc:hover .dropbox-Content {
+   display: block;
+ }
