@@ -134,3 +134,18 @@ li a:hover {
  .dropboxLoc:hover .dropbox-Content {
    display: block;
  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: black
+    height: 20%;
+    height: 2.5rem;  }
+    
+  
+  footer h4 {
+    background-color: black;
+    color: blue
+  }
